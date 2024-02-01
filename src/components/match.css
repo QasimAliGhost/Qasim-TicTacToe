@@ -1,0 +1,420 @@
+.hashbox-match{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 80rem;
+    height: 80rem;
+    animation: spin-match 2s forwards;
+}
+
+@keyframes spin-match{
+    from{
+        transform: translate(-50%,-50%) rotate(360deg);
+        top: 150%;
+        left: 50%;
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(0deg);
+        top: 53%;
+        left: 50%;
+    }
+}
+.score-match{
+    /* width: 30%; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.my-dataa{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 13%; */
+}
+.opponent-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 13%; */
+}
+
+.timer{
+    margin: 0rem 1rem;
+}
+.timer h2{
+    font-size: 2rem;
+    color: white;
+}
+
+.level{
+    margin-right: 3rem;
+    /* min-width: 7rem; */
+}
+
+.my-name{
+    /* border: 2px solid white; */
+    box-shadow: 0px 0px 10px rgb(175, 31, 204);
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-name-heading{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-shadow: 0px 0px 6px white;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.opponent-heading{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-shadow: 0px 0px 6px white;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.cross-common{
+    display: inline-block;
+    display: none;
+    position: absolute;
+    font-size: 20rem;
+    transform: translate(-50%,-50%);
+    color: rgb(168, 25, 25);
+    text-shadow: 0px 0px 150px rgb(170, 21, 53);
+    cursor: default;
+    user-select: none;
+    animation: fade 0.4s ease-in-out forwards;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1  ;
+    }
+}
+
+.cross1{
+    left: 15%;
+    top: 15%;
+}
+.cross2{
+    left: 50%;
+    top: 15%;
+}
+.cross3{
+    left: 85%;
+    top: 15%;
+}
+.cross4{
+    left: 15%;
+    top: 50%;
+}
+.cross5{
+    left: 50%;
+    top: 50%;
+}
+.cross6{
+    left: 85%;
+    top: 50%;
+}
+.cross7{
+    left: 15%;
+    top: 85%;
+}
+.cross8{
+    left: 50%;
+    top: 85%;
+}
+.cross9{
+    left: 85%;
+    top: 85%;
+}
+
+.space{
+    /* border: 2px solid white; */
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: all 0.25s ease-in-out;
+}
+.space:hover{
+    background-color: rgba(46, 46, 165, 0.616);
+    box-shadow: 0px 0px 300px rgba(46, 46, 165, 0.671) ;
+}
+.space1{
+    top: 16%;
+    left: 16%;
+}
+.space2{
+    top: 16%;
+    left: 51%;
+}
+.space3{
+    top: 16%;
+    left: 85%;
+}
+.space4{
+    top: 50%;
+    left: 16%;
+}
+.space5{
+    top: 50%;
+    left: 51%;
+}
+.space6{
+    top: 50%;
+    left: 85%;
+}
+.space7{
+    top: 85%;
+    left: 16%;
+}
+.space8{
+    top: 85%;
+    left: 51%;
+}
+.space9{
+    top: 85%;
+    left: 85%;
+}
+
+.Circle{
+    display: inline-block;
+    display: none;
+    position: absolute;
+    font-size: 25rem;
+    transform: translate(-50%,-50%);
+    color: rgb(46, 46, 182);
+    text-shadow: 0px 0px 150px rgb(46, 46, 182);
+    cursor: default;
+    user-select: none;
+    animation: fade 0.4s ease-in-out forwards;
+}
+.circle1{
+    top: 15%;
+    left: 15%;
+}
+.circle2{
+    top: 15%;
+    left: 50%;
+}
+.circle3{
+    top: 15%;
+    left: 85%;
+}
+.circle4{
+    top: 50%;
+    left: 15%;
+}
+.circle5{
+    top: 50%;
+    left: 50%;
+}
+.circle6{
+    top: 50%;
+    left: 85%;
+}
+.circle7{
+    top: 85%;
+    left: 15%;
+}
+.circle8{
+    top: 85%;
+    left: 50%;
+}
+.circle9{
+    top: 85%;
+    left: 85%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value to control darkness */
+    backdrop-filter: blur(3px); /* Adjust the blur value as needed */
+    z-index: 1;
+    animation: fade 0.4s ease-in-out forwards;
+}
+.popup-won{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f021b;
+    height: 40rem;
+    width: 40rem;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5rem;
+    z-index: 2;
+    box-shadow: 0px 0px 20px rgb(175, 31, 204) ;
+    animation: fade 0.4s ease-in-out forwards;
+
+}
+
+h2.who-won{
+    font-size: 2rem;
+    color: white;
+    margin: 2rem 0rem;
+}
+.play-again{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+
+}
+.back-match{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+
+}
+
+.winning-line{
+    position: absolute;
+    border: 20px solid cyan;
+    box-shadow: 0px 0px 15px cyan;
+    border-radius: 5rem;
+}
+@keyframes winning_animation{
+    from{
+        transform: scale(0.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.winning-line1{
+    width: 95%;
+    top: 13%;
+    animation: winning_animation 0.7s forwards;
+}
+.winning-line2{
+    width: 95%;
+    top: 48%;
+    color: red;
+    animation: winning_animation 0.7s forwards;
+}
+.winning-line3{
+    width: 95%;
+    top: 83%;
+    animation: winning_animation 0.7s forwards;
+}
+.winning-line4{
+    height: 95%;
+    left: 13%;
+    animation: winning_animation 0.7s forwards;
+}
+.winning-line5{
+    height: 95%;
+    left: 48%;
+    animation: winning_animation 0.7s forwards;
+}
+.winning-line6{
+    height: 95%;
+    left: 83%;
+    animation: winning_animation 0.7s forwards;
+}
+.winning-line7{
+    transform: rotate(45deg);
+    width: 95%;
+    top: 48%;
+    animation: winning-animation-rotate2 0.7s forwards;
+}
+@keyframes winning-animation-rotate2{
+    from{
+        transform: rotate(-45deg) scale(0.1);
+    }
+    to{
+        transform: rotate(-45deg) scale(1);
+    }
+}
+.winning-line8{
+    width: 95%;
+    top: 48%;
+    transform: rotate(-45deg);
+    animation: winning-animation-rotate1 0.7s forwards;
+}
+@keyframes winning-animation-rotate1{
+    from{
+        transform: rotate(45deg) scale(0.1);
+    }
+    to{
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+.left-button{
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(255, 0, 0, 0.623);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: 500; 
+    box-shadow: 0px 0px 5px red;
+    margin-left: 5%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer ;
+}
+.left-button:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+/* ################## MEDIA QUERIES ###################### */
+
+@media (max-width:450px){
+    .level{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }
+    .my-name{
+        height: 12rem;
+    }
+    .hashbox-match{
+        width: 50rem;
+        height: 50rem;
+    }
+    .line{
+        border: 7px solid rgb(175, 31, 204);    
+    }
+    .option-box{
+        width: 11rem;
+        height: 11rem;
+    }
+    .hashbox h2{
+        font-size: 1.6rem;
+    }
+
+    .cross-common{
+        font-size: 13rem;
+    }
+    .Circle{
+        font-size: 16rem;
+    }
+    .winning-line{
+        border: 10px solid cyan;
+        box-shadow: 0px 0px 10px cyan;
+        border-radius: 4rem;
+    }
+    .space{
+        width: 13rem;
+        height: 13rem;
+    }
+}
